@@ -3,9 +3,14 @@ body {
     font-family: $OpenSans;
 }
 
+.main-content {
+    padding: 80px 0;
+}
+
 .container {
-    max-width: 1220px;
+    max-width: 1200px;
     margin: auto;
+    padding: 0 30px;
 }
 
 h1,
