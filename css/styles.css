@@ -1,11 +1,17 @@
+/* Set character encoding */
+/* Import utility files */
+/* Import base styles */
+/* Global styles */
 body {
   margin: initial;
   background-color: #0e1414;
   font-family: "Open Sans", sans-serif;
 }
 
+/* Main content styling */
 .main-content {
   padding: 80px 0;
+  /* Responsive padding */
 }
 @media (min-width: 1200px) and (max-width: 1439px) {
   .main-content {
@@ -33,10 +39,12 @@ body {
   }
 }
 
+/* Container styling */
 .container {
   max-width: 1200px;
   margin: auto;
   padding: 0 30px;
+  /* Responsive container width */
 }
 @media (min-width: 1200px) and (max-width: 1439px) {
   .container {
@@ -64,6 +72,7 @@ body {
   }
 }
 
+/* Heading and paragraph styles */
 h1,
 h2,
 h3,
@@ -80,6 +89,7 @@ p {
   color: #ffffff;
 }
 
+/* Define font faces for Open Sans font family */
 @font-face {
   font-family: "Open Sans";
   src: url("../assets/fonts/OpenSans/OpenSans-Regular.ttf") format("truetype");
@@ -95,6 +105,8 @@ p {
   src: url("../assets/fonts/OpenSans/OpenSans-Medium.ttf") format("truetype");
   font-weight: 500;
 }
+/* Import component styles */
+/* Button styling */
 .underline-btn {
   position: relative;
   display: inline-block;
@@ -104,6 +116,9 @@ p {
   font-weight: 400;
   text-transform: uppercase;
   text-decoration: none;
+  /* Responsive font size and padding */
+  /* Styling for hover effect */
+  /* Hover effect */
 }
 @media (min-width: 1200px) and (max-width: 1439px) {
   .underline-btn {
@@ -150,8 +165,11 @@ p {
   height: 130%;
 }
 
+/* Import section styles */
+/* Styling for the "Answer Your Body" section */
 section.answer-your-body {
   padding: 100px 0;
+  /* Responsive padding */
 }
 @media (min-width: 1200px) and (max-width: 1439px) {
   section.answer-your-body {
@@ -178,11 +196,16 @@ section.answer-your-body {
     padding: 20px 0;
   }
 }
+section.answer-your-body .container {
+  /* Styling for the content wrapper */
+}
 section.answer-your-body .container .content-wrapper {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
   gap: 25px;
+  /* Responsive gap between grid items */
+  /* Styling for each content item */
 }
 @media (min-width: 1200px) and (max-width: 1439px) {
   section.answer-your-body .container .content-wrapper {
@@ -221,6 +244,7 @@ section.answer-your-body .container .content-wrapper [class^=content-] a img {
   object-fit: cover;
   display: block;
   vertical-align: middle;
+  /* Styling for image hover effect */
   transform: scale(1);
   transition: transform ease-out 0.2s;
 }
@@ -442,8 +466,10 @@ section.answer-your-body .container .content-wrapper .content-4 .reminder-block 
   }
 }
 
+/* Styling for the "All the Latest" section */
 section.all-the-latest {
   padding: 100px 0;
+  /* Responsive padding */
 }
 @media (min-width: 1200px) and (max-width: 1439px) {
   section.all-the-latest {
@@ -470,9 +496,14 @@ section.all-the-latest {
     padding: 20px 0;
   }
 }
+section.all-the-latest .container {
+  /* Styling for the article wrapper */
+}
 section.all-the-latest .container .heading {
   margin-bottom: 60px;
   text-align: center;
+  /* Responsive margin bottom */
+  /* Styling for the heading */
 }
 @media (min-width: 1200px) and (max-width: 1439px) {
   section.all-the-latest .container .heading {
@@ -503,6 +534,7 @@ section.all-the-latest .container .heading h2 {
   font-size: 40px;
   font-weight: 300;
   letter-spacing: 1.5px;
+  /* Responsive font size */
 }
 @media (min-width: 1200px) and (max-width: 1439px) {
   section.all-the-latest .container .heading h2 {
@@ -532,6 +564,8 @@ section.all-the-latest .container .heading h2 {
 section.all-the-latest .container .article-wrapper {
   display: flex;
   gap: 25px;
+  /* Responsive gap between articles */
+  /* Styling for each article */
 }
 @media (min-width: 1200px) and (max-width: 1439px) {
   section.all-the-latest .container .article-wrapper {
@@ -562,6 +596,7 @@ section.all-the-latest .container .article-wrapper {
 }
 section.all-the-latest .container .article-wrapper [class^=article-] {
   flex: 1;
+  /* Styling for article image */
 }
 section.all-the-latest .container .article-wrapper [class^=article-] .image {
   margin-bottom: 25px;

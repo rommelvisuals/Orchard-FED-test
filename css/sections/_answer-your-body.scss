@@ -1,6 +1,8 @@
+/* Styling for the "Answer Your Body" section */
 section.answer-your-body {
     padding: 100px 0;
 
+    /* Responsive padding */
     @include respond-to('lg') {
         padding: 70px 0;
     }
@@ -22,12 +24,15 @@ section.answer-your-body {
     }
 
     .container {
+
+        /* Styling for the content wrapper */
         .content-wrapper {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             grid-template-rows: repeat(2, 1fr);
             gap: 25px;
 
+            /* Responsive gap between grid items */
             @include respond-to('lg') {
                 gap: 15px;
             }
@@ -54,6 +59,7 @@ section.answer-your-body {
                 grid-row-gap: 15px;
             }
 
+            /* Styling for each content item */
             [class^="content-"] {
                 a {
                     img {
@@ -63,6 +69,7 @@ section.answer-your-body {
                         display: block;
                         vertical-align: middle;
 
+                        /* Styling for image hover effect */
                         transform: scale(1);
                         transition: transform ease-out 0.2s;
 

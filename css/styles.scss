@@ -1,12 +1,17 @@
+/* Set character encoding */
 @charset "UTF-8";
 
-@import 'utilities/variables',
-'utilities/mixins';
+/* Import utility files */
+@import 'utilities/variables';
+@import 'utilities/mixins';
 
-@import 'base/body',
-'base/font';
+/* Import base styles */
+@import 'base/body';
+@import 'base/font';
 
+/* Import component styles */
 @import 'components/buttons';
 
-@import 'sections/answer-your-body',
-'sections/all-the-latest';
+/* Import section styles */
+@import 'sections/answer-your-body';
+@import 'sections/all-the-latest';
