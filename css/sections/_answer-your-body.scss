@@ -9,18 +9,20 @@ section.answer-your-body {
             gap: 25px;
 
             [class^="content-"] {
-                img {
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                    display: block;
-                    vertical-align: middle;
+                a {
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        display: block;
+                        vertical-align: middle;
 
-                    transform: scale(1);
-                    transition: transform ease-out 0.2s;
+                        transform: scale(1);
+                        transition: transform ease-out 0.2s;
 
-                    &:hover {
-                        transform: scale(1.05);
+                        &:hover {
+                            transform: scale(1.04);
+                        }
                     }
                 }
             }
