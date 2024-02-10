@@ -1,21 +1,103 @@
 section.all-the-latest {
     padding: 100px 0;
 
+    @include respond-to('lg') {
+        padding: 70px 0;
+    }
+
+    @include respond-to('md') {
+        padding: 70px 0;
+    }
+
+    @include respond-to('sm') {
+        padding: 70px 0;
+    }
+
+    @include respond-to('xs') {
+        padding: 20px 0;
+    }
+
+    @include respond-to('xxs') {
+        padding: 20px 0;
+    }
+
     .container {
         .heading {
             margin-bottom: 60px;
             text-align: center;
 
+            @include respond-to('lg') {
+                margin-bottom: 40px;
+            }
+
+            @include respond-to('md') {
+                margin-bottom: 40px;
+            }
+
+            @include respond-to('sm') {
+                margin-bottom: 40px;
+            }
+
+            @include respond-to('xs') {
+                margin-bottom: 30px;
+            }
+
+            @include respond-to('xxs') {
+                margin-bottom: 30px;
+            }
+
             h2 {
                 font-size: 40px;
                 font-weight: 300;
                 letter-spacing: 1.5px;
+
+                @include respond-to('lg') {
+                    font-size: 26px;
+                }
+
+                @include respond-to('md') {
+                    font-size: 26px;
+                }
+
+                @include respond-to('sm') {
+                    font-size: 26px;
+                }
+
+                @include respond-to('xs') {
+                    font-size: 18px;
+                }
+
+                @include respond-to('xxs') {
+                    font-size: 18px;
+                }
             }
         }
 
         .article-wrapper {
             display: flex;
             gap: 25px;
+
+            @include respond-to('lg') {
+                gap: 15px;
+            }
+
+            @include respond-to('md') {
+                gap: 15px;
+            }
+
+            @include respond-to('sm') {
+                gap: 15px;
+            }
+
+            @include respond-to('xs') {
+                flex-direction: column;
+                gap: 30px;
+            }
+
+            @include respond-to('xxs') {
+                flex-direction: column;
+                gap: 30px;
+            }
 
             [class^="article-"] {
                 flex: 1;
@@ -35,17 +117,70 @@ section.all-the-latest {
                 .preview-block {
                     margin-bottom: 25px;
 
+                    @include respond-to('xs') {
+                        margin-bottom: 15px;
+                    }
+
+                    @include respond-to('xxs') {
+                        margin-bottom: 15px;
+                    }
+
                     h3 {
                         margin-bottom: 15px;
                         font-size: 18px;
                         font-weight: 500;
                         text-transform: capitalize;
+
+                        @include respond-to('lg') {
+                            margin-bottom: 10px;
+                            font-size: 12px;
+                        }
+
+                        @include respond-to('md') {
+                            margin-bottom: 10px;
+                            font-size: 12px;
+                        }
+
+                        @include respond-to('sm') {
+                            margin-bottom: 10px;
+                            font-size: 12px;
+                        }
+
+                        @include respond-to('xs') {
+                            margin-bottom: 10px;
+                            font-size: 12px;
+                        }
+
+                        @include respond-to('xxs') {
+                            margin-bottom: 10px;
+                            font-size: 12px;
+                        }
                     }
 
                     p {
                         font-size: 16px;
                         font-weight: 300;
                         line-height: 1.7;
+
+                        @include respond-to('lg') {
+                            font-size: 12px;
+                        }
+
+                        @include respond-to('md') {
+                            font-size: 12px;
+                        }
+
+                        @include respond-to('sm') {
+                            font-size: 12px;
+                        }
+
+                        @include respond-to('xs') {
+                            font-size: 12px;
+                        }
+
+                        @include respond-to('xxs') {
+                            font-size: 12px;
+                        }
                     }
                 }
             }

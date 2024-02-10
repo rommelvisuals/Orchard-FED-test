@@ -1,16 +1,57 @@
 body {
+    margin: initial;
     background-color: $black;
     font-family: $OpenSans;
 }
 
 .main-content {
     padding: 80px 0;
+
+    @include respond-to('lg') {
+        padding: 50px 0;
+    }
+
+    @include respond-to('md') {
+        padding: 50px 0;
+    }
+
+    @include respond-to('sm') {
+        padding: 50px 0;
+    }
+
+    @include respond-to('xs') {
+        padding: 10px 0;
+    }
+
+    @include respond-to('xxs') {
+        padding: 10px 0;
+    }
 }
 
 .container {
     max-width: 1200px;
     margin: auto;
     padding: 0 30px;
+
+    @include respond-to('lg') {
+        max-width: 775px;
+    }
+
+    @include respond-to('md') {
+        max-width: 775px;
+    }
+
+    @include respond-to('sm') {
+        max-width: 775px;
+    }
+
+    @include respond-to('xs') {
+        max-width: 775px;
+    }
+
+    @include respond-to('xxs') {
+        max-width: 775px;
+    }
 }
 
 h1,
