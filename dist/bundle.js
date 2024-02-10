@@ -16,7 +16,7 @@
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _css_styles_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../css/styles.css */ \"./css/styles.css\");\n\r\n\r\nFancybox.bind(\"[data-fancybox]\", {});\n\n//# sourceURL=webpack://orchard-fed-test/./js/script.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _css_styles_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../css/styles.css */ \"./css/styles.css\");\n\r\n\r\nFancybox.bind(\"[data-fancybox]\", {});\r\n\r\n$('a').click(function(event) {\r\n    event.preventDefault();\r\n    console.log('Clicked element:', $(this).attr('id'));\r\n});\n\n//# sourceURL=webpack://orchard-fed-test/./js/script.js?");
 
 /***/ }),
 
